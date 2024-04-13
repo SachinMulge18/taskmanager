@@ -1,0 +1,29 @@
+.app {
+  height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3d940;
+}
+
+.heading {
+  font-size: 3em;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: black;
+  padding: 0.5em;
+}
+.sub-text {
+  background: #000;
+  font-size: 0.2em;
+  letter-spacing: 1px;
+  color: #f3d940;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+@media screen and (max-width: 640px) {
+  .heading {
+    font-size: 2em;
+  }
+}

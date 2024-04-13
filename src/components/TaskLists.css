@@ -1,0 +1,60 @@
+.task-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.task-heading {
+  letter-spacing: 1px;
+  margin-bottom: 0.5em;
+}
+.task-container > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+  width: 50%;
+  background: #fff;
+  border-radius: 10px;
+  margin: 3px 0;
+}
+.task-container > ul > h3 {
+  color: black;
+}
+.task-completed {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  text-decoration-thickness: 2px;
+  text-decoration-style: double;
+}
+.actions {
+  display: flex;
+  align-items: center;
+}
+.actions > li {
+  margin: 0 5px;
+  cursor: pointer;
+}
+.trash {
+  color: red;
+}
+.trash:hover {
+  color: rgb(197, 35, 35);
+}
+.task-complete {
+  color: greenyellow;
+}
+.task-container > ul > li {
+  color: white;
+  display: flex;
+  margin: 0.2em 0;
+  gap: 2;
+}
+
+@media screen and (max-width: 640px) {
+  .task-container {
+    padding: 0.5em;
+  }
+  .task-container > ul {
+    width: 100%;
+  }
+}
