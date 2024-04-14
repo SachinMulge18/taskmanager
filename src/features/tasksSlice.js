@@ -1,33 +1,3 @@
-// import { createSlice } from "@reduxjs/toolkit";
-
-// const tasksSlice = createSlice({
-//   name: "tasks",
-//   initialState: {
-//     tasks: [],
-//   },
-//   reducers: {
-//     addTask: (state, action) => {
-//       state.tasks.push({
-//         id: Math.random().toString(36).substring(2, 9),
-//         text: action.payload,
-//         completed: false,
-//       });
-//     },
-//     deleteTask: (state, action) => {
-//       state.tasks = state.tasks.filter((task) => task.id !== action.payload);
-//     },
-//     toggleTask: (state, action) => {
-//       const task = state.tasks.find((task) => task.id === action.payload);
-//       if (task) {
-//         task.completed = !task.completed;
-//       }
-//     },
-//   },
-// });
-
-// export const { addTask, deleteTask, toggleTask } = tasksSlice.actions;
-// export default tasksSlice.reducer;
-// reducers/tasksSlice.js
 import { createSlice } from "@reduxjs/toolkit";
 
 const loadTasks = () => {

@@ -11,11 +11,13 @@ const TaskLists = () => {
   const dispatch = useDispatch();
   console.log(tasks);
 
+  // delete Task
   const deleteHandle = (id) => {
     dispatch(deleteTask(id));
     console.log(id);
   };
 
+  // Toggle task
   const handleToggleTask = (taskId) => {
     dispatch(toggleTask(taskId));
     console.log(taskId);

@@ -6,10 +6,14 @@ import "./TaskInput.css";
 const TaskInput = () => {
   const dispatch = useDispatch();
   const [text, setText] = useState("");
+ 
+  // get the entered input value
   const handleTextChange = (e) => {
     const textValue = e.target.value;
     setText(textValue);
   };
+
+  // Add the task to the list
   const handleAddTask = () => {
     if (text.trim() !== "") {
       dispatch(addTask(text));
@@ -19,6 +23,7 @@ const TaskInput = () => {
       console.log("enter text");
     }
   };
+  // on enter add the tasks
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
       handleAddTask();
